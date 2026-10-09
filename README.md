@@ -12,3 +12,7 @@ Remove-Item -Recurse -Force vendor
 <br> composer install --no-security-blocking
 <br> composer install --no-dev --prefer-dist
 
+<br> public function walas()
+    {
+        return $this->hasMany(Walas::class, 'kelas_id');
+    }
